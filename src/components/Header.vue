@@ -46,7 +46,7 @@ export default {
     width: 100%;
     max-width: 1000px;
     margin: auto;
-    @include flex($justify: space-between);
+    @include flex($justify: space-between, $wrap: nowrap );
 
     h2 {
       font-size: 1.6rem;
@@ -63,6 +63,7 @@ export default {
       border: none;
       outline: none;
       cursor: pointer;
+      margin-left: 8px;
     }
   }
 }
