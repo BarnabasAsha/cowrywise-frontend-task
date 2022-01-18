@@ -27,8 +27,8 @@ git clone https://github.com/BarnabasAsha/cowrywise-frontend-task.git
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:3000
-npm run dev
+# serve with hot reload at localhost:8080
+npm run serve
 
 # build for production
 npm run build
