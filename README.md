@@ -1,24 +1,35 @@
-# cowrywise-task
+# Cowrywise frontend task built with vue
 
-## Project setup
-```
+## Features
+
+- Search and view high resolution images
+- Click on images to view in a wider view
+- Feedpack if requested image is not available
+- Basic Interaction with Css animations and transitions
+- Skeleton placholders when loading images
+
+## Project structure
+
+- src
+  - api
+  - assets
+  - components
+  - styles
+  - store
+  - App.vue
+
+## Project commands setup
+
+```bash
+# clone repo
+git clone https://github.com/BarnabasAsha/cowrywise-frontend-task.git
+
+# install dependencies
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# serve with hot reload at localhost:3000
+npm run dev
 
-### Compiles and minifies for production
-```
+# build for production
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
