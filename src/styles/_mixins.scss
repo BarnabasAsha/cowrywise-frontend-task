@@ -1,0 +1,44 @@
+//Variables
+$primary-color: #ffffff;
+$secondary-color: #dce2e8;
+$grey-color: #6c767e;
+
+@mixin flex($direction:row, $justify:center, $align:center, $wrap:wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin mobile {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  column-gap: 2rem;
+
+  @include ipad {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+
+  @include mobile {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }  
+}
