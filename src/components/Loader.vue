@@ -13,7 +13,7 @@
 export default {
   name: "Loader",
   mounted() {
-    const loaders = document.getElementsByClassName("loader_box");
+    const loaders = document.querySelectorAll(".loader_box");
     loaders[1].classList.add("boxx");
     loaders[2].classList.add("boxx");
     loaders[5].classList.add("boxx");
